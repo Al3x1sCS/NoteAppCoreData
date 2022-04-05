@@ -14,8 +14,9 @@
 		B2E6DAB327FBB16700FEAD25 /* NoteAppCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2E6DAB127FBB16700FEAD25 /* NoteAppCoreData.xcdatamodeld */; };
 		B2E6DAB527FBB16700FEAD25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E6DAB427FBB16700FEAD25 /* Assets.xcassets */; };
 		B2E6DAB827FBB16700FEAD25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E6DAB627FBB16700FEAD25 /* LaunchScreen.storyboard */; };
-		B2E6DAC027FBBD9500FEAD25 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6DABF27FBBD9500FEAD25 /* NoteCell.swift */; };
 		B2E6DAC227FBBDBC00FEAD25 /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6DAC127FBBDBC00FEAD25 /* NoteTableView.swift */; };
+		B2E6DAC427FBC7E800FEAD25 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6DAC327FBC7E800FEAD25 /* NoteCell.swift */; };
+		B2E6DAC627FBCDE100FEAD25 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6DAC527FBCDE100FEAD25 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,9 @@
 		B2E6DAB427FBB16700FEAD25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2E6DAB727FBB16700FEAD25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2E6DAB927FBB16700FEAD25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2E6DABF27FBBD9500FEAD25 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		B2E6DAC127FBBDBC00FEAD25 /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
+		B2E6DAC327FBC7E800FEAD25 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		B2E6DAC527FBCDE100FEAD25 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +67,14 @@
 				B2E6DAA827FBB16700FEAD25 /* AppDelegate.swift */,
 				B2E6DAAA27FBB16700FEAD25 /* SceneDelegate.swift */,
 				B2E6DAAC27FBB16700FEAD25 /* NoteDetailVC.swift */,
-				B2E6DABF27FBBD9500FEAD25 /* NoteCell.swift */,
 				B2E6DAAE27FBB16700FEAD25 /* Main.storyboard */,
+				B2E6DAC327FBC7E800FEAD25 /* NoteCell.swift */,
+				B2E6DAC127FBBDBC00FEAD25 /* NoteTableView.swift */,
+				B2E6DAC527FBCDE100FEAD25 /* Note.swift */,
 				B2E6DAB427FBB16700FEAD25 /* Assets.xcassets */,
 				B2E6DAB627FBB16700FEAD25 /* LaunchScreen.storyboard */,
 				B2E6DAB927FBB16700FEAD25 /* Info.plist */,
 				B2E6DAB127FBB16700FEAD25 /* NoteAppCoreData.xcdatamodeld */,
-				B2E6DAC127FBBDBC00FEAD25 /* NoteTableView.swift */,
 			);
 			path = NoteAppCoreData;
 			sourceTree = "<group>";
@@ -149,8 +152,9 @@
 			files = (
 				B2E6DAAD27FBB16700FEAD25 /* NoteDetailVC.swift in Sources */,
 				B2E6DAC227FBBDBC00FEAD25 /* NoteTableView.swift in Sources */,
+				B2E6DAC627FBCDE100FEAD25 /* Note.swift in Sources */,
 				B2E6DAA927FBB16700FEAD25 /* AppDelegate.swift in Sources */,
-				B2E6DAC027FBBD9500FEAD25 /* NoteCell.swift in Sources */,
+				B2E6DAC427FBC7E800FEAD25 /* NoteCell.swift in Sources */,
 				B2E6DAB327FBB16700FEAD25 /* NoteAppCoreData.xcdatamodeld in Sources */,
 				B2E6DAAB27FBB16700FEAD25 /* SceneDelegate.swift in Sources */,
 			);
