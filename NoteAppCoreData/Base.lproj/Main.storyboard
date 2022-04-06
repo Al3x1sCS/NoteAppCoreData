@@ -69,11 +69,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Nxs-uV-0zy"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="newNote" id="Nxs-uV-0zy"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="editNote" id="uHz-ht-Ed1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NG1-Rt-QKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +98,7 @@
             </objects>
             <point key="canvasLocation" x="-1642" y="84"/>
         </scene>
-        <!--Note DetailVC-->
+        <!--Detalhe da Tarefa-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="NoteDetailVC" customModule="NoteAppCoreData" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,7 +149,7 @@
                             <constraint firstItem="U3H-IG-xTv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wpV-oF-sPU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2gW-7q-Ju7">
+                    <navigationItem key="navigationItem" title="Detalhe da Tarefa" id="2gW-7q-Ju7">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="BaH-Kv-u4x">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="aic-0A-GId">
                                 <rect key="frame" x="302" y="4.6666666666666679" width="92" height="35"/>
@@ -169,6 +172,9 @@
             <point key="canvasLocation" x="20" y="84"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="uHz-ht-Ed1"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
