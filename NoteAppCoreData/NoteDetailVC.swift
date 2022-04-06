@@ -3,11 +3,12 @@ import CoreData
 
 class NoteDetailVC: UIViewController {
 
-    //var noteList = [Note] ()
     @IBOutlet weak var titleTF: UITextField!
+    
     @IBOutlet weak var descTV: UITextView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
     }
