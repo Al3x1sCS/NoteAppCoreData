@@ -54,7 +54,8 @@ class NoteTableView: UITableViewController {
         
         let noteCell = tableView.dequeueReusableCell(withIdentifier: "noteCellID", for: indexPath) as! NoteCell
         let thisNote: Note!
-        thisNote = noteList[indexPath.row]
+        thisNote = nonDeletedNotes()[indexPath.row]
+        
         noteCell.titleLabel.text = thisNote.title
         noteCell.descLabel.text = thisNote.desc
         
