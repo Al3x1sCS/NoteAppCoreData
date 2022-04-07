@@ -7,11 +7,29 @@ class NoteTableView: UITableViewController {
     
     var firstLoad = true
     
+    func nonDeletedNotes() -> [Note] {
+        
+        var noDeletedNoteList = [Note] ()
+        
+        for note in noteList {
+            
+            if (note.deletedDate == nil) {
+                
+                noDeletedNoteList.append(note)
+                
+            }
+        }
+        
+        return noDeletedNoteList
+        
+    }
+    
     override func viewDidLoad() {
         
         if (firstLoad) {
             
             firstLoad = false
+            
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
             let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
@@ -46,7 +64,7 @@ class NoteTableView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return noteList.count
+        return nonDeletedNotes().count
         
     }
     
@@ -71,7 +89,7 @@ class NoteTableView: UITableViewController {
             let noteDetail = segue.destination as? NoteDetailVC
             
             let selectedNote: Note!
-            selectedNote = noteList[indexPath.row]
+            selectedNote = nonDeletedNotes()[indexPath.row]
             noteDetail!.selectedNote = selectedNote
             
             tableView.deselectRow(at: indexPath, animated: true)

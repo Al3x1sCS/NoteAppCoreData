@@ -133,6 +133,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5r3-Dz-whf">
+                                <rect key="frame" x="151.33333333333334" y="433" width="111.33333333333334" height="38"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="DELETAR">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="DeleteNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQQ-yt-fsT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -141,6 +152,8 @@
                             <constraint firstItem="nfa-jG-42p" firstAttribute="centerX" secondItem="5GI-HA-5uK" secondAttribute="centerX" id="46C-Py-pzx"/>
                             <constraint firstItem="nPr-CE-iE4" firstAttribute="centerX" secondItem="nfa-jG-42p" secondAttribute="centerX" id="5jc-F0-Jff"/>
                             <constraint firstItem="5GI-HA-5uK" firstAttribute="centerX" secondItem="U3H-IG-xTv" secondAttribute="centerX" id="FkM-XR-nB5"/>
+                            <constraint firstItem="5r3-Dz-whf" firstAttribute="top" secondItem="nPr-CE-iE4" secondAttribute="bottom" constant="50" id="GgV-bS-JTa"/>
+                            <constraint firstItem="5r3-Dz-whf" firstAttribute="centerX" secondItem="nPr-CE-iE4" secondAttribute="centerX" id="IGf-BM-RYR"/>
                             <constraint firstItem="nfa-jG-42p" firstAttribute="top" secondItem="5GI-HA-5uK" secondAttribute="bottom" constant="30" id="PCU-9y-umc"/>
                             <constraint firstItem="5GI-HA-5uK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="h8e-c4-JRU"/>
                             <constraint firstItem="5GI-HA-5uK" firstAttribute="top" secondItem="U3H-IG-xTv" secondAttribute="bottom" constant="5" id="kx6-TW-OLN"/>
@@ -152,10 +165,12 @@
                     <navigationItem key="navigationItem" title="Detalhe da Tarefa" id="2gW-7q-Ju7">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="BaH-Kv-u4x">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="aic-0A-GId">
-                                <rect key="frame" x="302" y="4.6666666666666679" width="92" height="35"/>
+                                <rect key="frame" x="302" y="3" width="92" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Salvar"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Salvar">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7NF-x2-bPf"/>
                                 </connections>
@@ -173,7 +188,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uHz-ht-Ed1"/>
+        <segue reference="Nxs-uV-0zy"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="plus" catalog="system" width="128" height="113"/>
@@ -185,6 +200,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
