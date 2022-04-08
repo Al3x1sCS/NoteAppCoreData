@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7fJ-WS-47E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gPe-yq-Ymi">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,6 +8,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="8tz-Ym-Zxe">
+            <objects>
+                <viewController id="Umx-iF-Rsw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ch5-KW-Lk9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="pTI-Tj-GQM">
+                                <rect key="frame" x="87" y="145" width="240" height="256"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb9-aM-vXu">
+                                <rect key="frame" x="170.33333333333334" y="480" width="73.333333333333343" height="23.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TAREFAS">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="8"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="gAo-FC-l4h" kind="show" id="4Ht-k5-Ayh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z6f-j4-Z9z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pTI-Tj-GQM" firstAttribute="leading" secondItem="Z6f-j4-Z9z" secondAttribute="leading" constant="87" id="7u1-CC-LQn"/>
+                            <constraint firstItem="nb9-aM-vXu" firstAttribute="top" secondItem="pTI-Tj-GQM" secondAttribute="bottom" constant="79" id="IeE-Qt-NFI"/>
+                            <constraint firstItem="nb9-aM-vXu" firstAttribute="centerX" secondItem="pTI-Tj-GQM" secondAttribute="centerX" id="b09-pf-bco"/>
+                            <constraint firstItem="Z6f-j4-Z9z" firstAttribute="trailing" secondItem="pTI-Tj-GQM" secondAttribute="trailing" constant="87" id="lNJ-iM-fsv"/>
+                            <constraint firstItem="nb9-aM-vXu" firstAttribute="width" secondItem="pTI-Tj-GQM" secondAttribute="width" multiplier="0.30625" id="t1D-ZA-zee"/>
+                            <constraint firstItem="pTI-Tj-GQM" firstAttribute="top" secondItem="Z6f-j4-Z9z" secondAttribute="top" constant="57" id="tS4-3u-dKi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mms-gZ-qc6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mj7-rD-9S8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-776.81159420289862" y="83.705357142857139"/>
+        </scene>
         <!--Lista-->
         <scene sceneID="ogp-nD-eHp">
             <objects>
@@ -80,23 +119,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NG1-Rt-QKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-812" y="84"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="3FW-l4-I3R">
-            <objects>
-                <navigationController id="7fJ-WS-47E" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XOJ-Dh-DE6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="gAo-FC-l4h" kind="relationship" relationship="rootViewController" id="hM6-dU-mRo"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RQO-l4-yyN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1642" y="84"/>
+            <point key="canvasLocation" x="97.101449275362327" y="83.705357142857139"/>
         </scene>
         <!--Detalhe da Tarefa-->
         <scene sceneID="tne-QT-ifu">
@@ -134,11 +157,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5r3-Dz-whf">
-                                <rect key="frame" x="151.33333333333334" y="433" width="111.33333333333334" height="38"/>
+                                <rect key="frame" x="153" y="433" width="108" height="37"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="DELETAR">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="DeleteNote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQQ-yt-fsT"/>
@@ -184,13 +207,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="84"/>
+            <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XZC-ku-6qw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gPe-yq-Ymi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sLZ-6k-W5e">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Umx-iF-Rsw" kind="relationship" relationship="rootViewController" id="kWP-Xg-VZT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IiK-8k-Qpx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1688.4057971014495" y="83.705357142857139"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Nxs-uV-0zy"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="icon.png" width="256" height="256"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

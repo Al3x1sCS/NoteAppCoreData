@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2CBF21B2800D5E30014BD9E /* tarefas.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CBF21A2800D5E30014BD9E /* tarefas.png */; };
+		B2CBF21D2800D8090014BD9E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CBF21C2800D8090014BD9E /* icon.png */; };
 		B2E6DAA927FBB16700FEAD25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6DAA827FBB16700FEAD25 /* AppDelegate.swift */; };
 		B2E6DAAB27FBB16700FEAD25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6DAAA27FBB16700FEAD25 /* SceneDelegate.swift */; };
 		B2E6DAAD27FBB16700FEAD25 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E6DAAC27FBB16700FEAD25 /* NoteDetailVC.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2CBF21A2800D5E30014BD9E /* tarefas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tarefas.png; path = ../../Imagens/tarefas.png; sourceTree = "<group>"; };
+		B2CBF21C2800D8090014BD9E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../../Downloads/icon.png; sourceTree = "<group>"; };
 		B2E6DAA527FBB16700FEAD25 /* NoteAppCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteAppCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E6DAA827FBB16700FEAD25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E6DAAA27FBB16700FEAD25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				B2E6DAC327FBC7E800FEAD25 /* NoteCell.swift */,
 				B2E6DAC127FBBDBC00FEAD25 /* NoteTableView.swift */,
 				B2E6DAC527FBCDE100FEAD25 /* Note.swift */,
+				B2CBF21A2800D5E30014BD9E /* tarefas.png */,
+				B2CBF21C2800D8090014BD9E /* icon.png */,
 				B2E6DAB427FBB16700FEAD25 /* Assets.xcassets */,
 				B2E6DAB627FBB16700FEAD25 /* LaunchScreen.storyboard */,
 				B2E6DAB927FBB16700FEAD25 /* Info.plist */,
@@ -137,6 +143,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CBF21B2800D5E30014BD9E /* tarefas.png in Resources */,
+				B2CBF21D2800D8090014BD9E /* icon.png in Resources */,
 				B2E6DAB827FBB16700FEAD25 /* LaunchScreen.storyboard in Resources */,
 				B2E6DAB527FBB16700FEAD25 /* Assets.xcassets in Resources */,
 				B2E6DAB027FBB16700FEAD25 /* Main.storyboard in Resources */,
